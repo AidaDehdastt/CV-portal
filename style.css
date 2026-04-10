@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    background: #dfe3ed;
+}
+
+header {
+    background: #bdc9e5;
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgb(196, 208, 235);
+    padding: 100px;
+    
+}
+
+.profile-img {
+  width: 300px;
+}
+
+.card {
+    background: rgb(181, 193, 224);
+    padding: 10px;
+    flex: 1;
+}
+
+button {
+    padding: 10px 27px;
+    font-size:medium
+}
+
+
