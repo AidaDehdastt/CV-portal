@@ -1,6 +1,7 @@
 body {
     font-family: Arial;
     background: #dfe3ed;
+    margin: 0;
 }
 
 header {
@@ -10,6 +11,8 @@ header {
 
 nav a {
     color: rgb(0, 0, 0);
+    margin-right: 10px;
+    text-decoration: none;
 }
 
 nav a.active {
@@ -22,22 +25,52 @@ main {
     margin: 20px auto;
     background: rgb(196, 208, 235);
     padding: 100px;
-    
 }
 
 .profile-img {
-  width: 300px;
+    width: 300px;
 }
 
 .card {
     background: rgb(181, 193, 224);
     padding: 10px;
-    flex: 1;
+    margin-bottom: 10px;
 }
 
 button {
     padding: 10px 27px;
-    font-size:medium
+    font-size: medium;
 }
 
+
+.modal-bg {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.egg {
+    width: 70px;
+    height: 90px;
+    background: radial-gradient(circle at 30% 30%, #fff6a0, #f2b705);
+    border-radius: 50% 50% 45% 45%;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    animation: pop 0.2s ease;
+    z-index: 1000;
+}
 

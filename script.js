@@ -6,27 +6,46 @@ function showModal(text) {
     modalBg.style.display = "flex";
 }
 
+// ==========================
+// MODAL STÄNG
+// ==========================
+
 document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("modal-bg")) {
-        document.querySelector(".modal-bg").style.display = "none";
+    const modalBg = document.querySelector(".modal-bg");
+
+    if (e.target === modalBg) {
+        modalBg.style.display = "none";
     }
 });
 
-const easter = document.querySelector(".easter");
+let currentEgg = null;
 
-if (easter) {
-    easter.addEventListener("click", () => {
-        document.body.style.background = "pink";
-    });
-}
+document.addEventListener("click", (e) => {
 
-let code = "";
+    const clickedEgg = e.target.classList.contains("egg");
 
-document.addEventListener("keydown", (e) => {
-    code += e.key;
+    if (clickedEgg) return;
 
-    if (code.includes("1337")) {
-        showModal("🎉 Du hittade ett hemligt meddelande!");
-        code = "";
+    if (currentEgg) {
+        currentEgg.remove();
+        currentEgg = null;
+        return;
     }
+
+    const egg = document.createElement("div");
+    egg.classList.add("egg");
+    document.body.appendChild(egg);
+
+    currentEgg = egg;
+
+
+
+    egg.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        document.body.style.background =
+            "linear-gradient(to right, hotpink, purple)";
+
+        showModal("🎉 Du hittade påskägget!");
+    });
 });
