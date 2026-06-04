@@ -6,10 +6,6 @@ function showModal(text) {
     modalBg.style.display = "flex";
 }
 
-// ==========================
-// MODAL STÄNG
-// ==========================
-
 document.addEventListener("click", (e) => {
     const modalBg = document.querySelector(".modal-bg");
 
