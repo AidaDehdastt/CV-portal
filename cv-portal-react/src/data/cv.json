@@ -1,0 +1,39 @@
+{
+  "name": "Aida Dehdast",
+  "location": "Stockholm",
+  "phone": "076 592 99 28",
+  "email": "aida.dehdast.1384@gmail.com",
+  "profile": "Jag är en driven och nyfiken blivande fullstackutvecklare med ett stort intresse för webbutveckling. Jag har erfarenhet av att bygga webbplatser med HTML, CSS och JavaScript och utvecklar kontinuerligt mina kunskaper inom både frontend och backend.",
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Grundläggande förståelse för webbutveckling (frontend & backend)"
+  ],
+  "projects": [
+    "Portfolio-webbplats (HTML, CSS, JavaScript)",
+    "Interaktiva webbprojekt med modaler och användarinteraktion"
+  ],
+  "experience": [
+    {
+      "role": "Servitris & Bartender",
+      "place": "Halltorps Gästgiveri, Öland",
+      "description": "Arbetade i en dynamisk miljö där jag utvecklade stark problemlösningsförmåga och stresstålighet. Ansvarade för service, kundbemötande och att hantera flera uppgifter samtidigt."
+    },
+    {
+      "role": "Kassapersonal",
+      "place": "Halltorps Gästgiveri",
+      "description": "Ansvarade för kassahantering och kundservice. Fick erfarenhet av att arbeta med system och hantera ansvar i högt tempo."
+    },
+    {
+      "role": "Servitris & Biljettansvarig",
+      "place": "Krögers, Kalmar",
+      "description": "Arbetade i en intensiv miljö med fokus på service och effektivitet.Utvecklade förmågan att hantera flera uppgifter samtidigt och arbeta strukturerat."
+    }
+  ],
+  "languages": [
+    "Svenska - flytande",
+    "Engelska - goda kunskaper",
+    "Persiska - modersmål"
+  ]
+}
