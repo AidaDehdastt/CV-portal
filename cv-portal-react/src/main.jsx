@@ -5,10 +5,9 @@ import App from "./App";
 import "./style.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter basename="/cv-portal-react">
-       <App />
-    </BrowserRouter>
-
-  </React.StrictMode>
+<React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+</React.StrictMode>
 );
