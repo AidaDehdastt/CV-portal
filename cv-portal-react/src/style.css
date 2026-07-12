@@ -1,76 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
 body {
-    font-family: Arial;
-    background: #dfe3ed;
+    font-family: "Poppins", sans-serif;
     margin: 0;
+    background: #dfe3ed;
 }
+
+
 
 header {
     background: #bdc9e5;
-    padding: 10px;
+    padding: 20px;
 }
 
-nav a {
-    color: rgb(0, 0, 0);
-    margin-right: 10px;
-    text-decoration: none;
+
+
+nav {
+    display: flex;
+    gap: 20px;
 }
+
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
 
 nav a.active {
     font-weight: bold;
-    text-decoration: underline;
 }
 
+
+
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    background: rgb(196, 208, 235);
-    padding: 100px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #c4d0eb;
 }
+
+
 
 .profile-img {
     width: 300px;
+    max-width: 100%;
 }
+
+
+
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+
 
 .card {
-    background: rgb(181, 193, 224);
-    padding: 10px;
-    margin-bottom: 10px;
+    background: #b5c1e0;
+    padding: 20px;
+    flex: 1;
 }
 
-button {
-    padding: 10px 27px;
-    font-size: medium;
-}
 
 
 .modal-bg {
+
     position: fixed;
+
     inset: 0;
+
     background: rgba(0,0,0,0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
 }
+
+
 
 .modal {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    font-size: 20px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
 }
 
-.egg {
-    width: 70px;
-    height: 90px;
-    background: radial-gradient(circle at 30% 30%, #fff6a0, #f2b705);
-    border-radius: 50% 50% 45% 45%;
+
+@media(max-width:700px){
+
+
+    nav {
+
+        flex-direction:column;
+
+    }
+
+
+    main {
+
+        margin:10px;
+
+        padding:20px;
+
+    }
+
+
+    .columns {
+
+        flex-direction:column;
+
+    }
+
+
+    h1 {
+
+        font-size:28px;
+
+    }
+
+
+    p {
+
+        font-size:16px;
+
+        line-height:1.6;
+
+    }
+
+}
+
+
+@media print {
+
+
+    header,
+    button,
+    .secret-egg {
+
+        display:none;
+
+    }
+
+
+    body {
+
+        background:white;
+
+    }
+
+
+    main {
+
+        background:white;
+
+        width:100%;
+
+        margin:0;
+
+    }
+
+
+}
+
+
+
+.egg-modal-bg {
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:2000;
+
+}
+
+
+.click-egg {
+
     position: fixed;
-    top: 20%;
+
+    top: 50%;
+
     left: 50%;
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    animation: pop 0.2s ease;
-    z-index: 1000;
+
+    transform: translate(-50%, -50%);
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:40px;
+
+    z-index:3000;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
 }
 
+
+.click-egg p {
+
+    font-size:18px;
+
+}
+
+
+
+.egg-keyboard-modal {
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:4000;
+
+}
+
+
+
+.egg-box {
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+}
+
+.egg-background {
+
+    background: linear-gradient(
+        135deg,
+        pink,
+        #ffd6f6,
+        #ffb6c1
+    );
+
+}
